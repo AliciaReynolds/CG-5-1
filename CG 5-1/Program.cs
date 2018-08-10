@@ -6,26 +6,31 @@ namespace CG_5_1
     {
         static void Main(string[] args)
         {
+            //Create method that combines the names and outputs them
+            Combo();
+
+
+            
+
+            Console.ReadLine();
+        }
+
+        private static void Combo()
+        {
             //Have the user input their first name
 
             Console.WriteLine("Hello.  Please enter your first name.");
-            string First = Console.ReadLine();
+            string FirstName = Console.ReadLine();
 
             //Have the user input their last name
 
             Console.WriteLine("Thank you.  Now please enter your last name.");
-            string Last = Console.ReadLine();
+            string LastName = Console.ReadLine();
+
+            Console.WriteLine($"Nice to meet you {FirstName} {LastName}");
+        }
 
 
-            //Create method that combines the names and outputs them
-            Combo(First);
-            Combo(Last);
-
-
-         }
-        private static string Combo(string First, string Last)
-    { Console.WriteLine($"Nice to meet you {First} {Last}");
     }
-
 
 }
